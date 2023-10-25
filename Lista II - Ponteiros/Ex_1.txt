@@ -1,0 +1,14 @@
+"p++" é um exemplo de operação de incremento de ponteiro. O ponteiro 'p' é incrementado em uma unidade, isso 
+significa que o ponteiro agora apontará para o próximo elemento na sequência de dados.
+
+"(*p)++" o primeiro o valor apontado pelo ponteiro 'p' é acessado usando o operador de desreferência (*p) 
+e em seguida, esse valor é incrementado em uma unidade. Isso significa que o valor no endereço de memória apontado 
+por 'p' será aumentado em 1.
+
+"*(p++)", neste caso, o ponteiro 'p' é incrementado em uma unidade (p++), mas a operação de desreferência é realizada
+no valor original de 'p'. Isso significa que o valor no endereço de memória apontado por 'p' é acessado e usado em 
+alguma operação.
+
+"*(p+10)" essa expressão utiliza a aritmética de ponteiro para acessar o valor em um deslocamento de 10 unidades 
+além do endereço apontado por 'p'. Isso significa que você está acessando o valor do décimo elemento após o elemento 
+atualmente apontado por 'p'.
