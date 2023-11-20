@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "ArvoreBinaria.c"
+
+int main () {
+
+    int N = 8, dados[8] = {50,100,30,20,40,45,35,37};
+
+    ArvBin* raiz = cria_ArvBin();
+
+    int i;
+    for(i=0; i < N; i++)
+        insere_ArvBin(raiz,dados[i]);
+
+    preOrdem_ArvBin(raiz);
+    //emOrdem_ArvBin(raiz);
+    //posOrdem_ArvBin(raiz);
+
+    consulta_arvore_bin ( raiz, 100 );
+
+//    printf("altura: %d\n",altura_ArvBin(raiz));
+//    printf("total NOs: %d\n",totalNO_ArvBin(raiz));
+//
+//    if (consulta_ArvBin(raiz, 4, &al))
+//        printf("\n%d %s\n",al.mat,al.nome);
+
+    libera_ArvBin(raiz);
+    printf("\nFim!\n");
+    
+    return 0;
+
+}
